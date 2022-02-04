@@ -1,0 +1,46 @@
+Determining if files sys/endian.h exist failed with the following output:
+Change Dir: /home/marks/Documents/Projects/UxPlay/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3730d/fast && /usr/bin/make -f CMakeFiles/cmTC_3730d.dir/build.make CMakeFiles/cmTC_3730d.dir/build
+make[1]: Entering directory '/home/marks/Documents/Projects/UxPlay/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3730d.dir/BSD.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3730d.dir/BSD.c.o   -c /home/marks/Documents/Projects/UxPlay/CMakeFiles/CheckIncludeFiles/BSD.c
+/home/marks/Documents/Projects/UxPlay/CMakeFiles/CheckIncludeFiles/BSD.c:2:10: fatal error: sys/endian.h: No such file or directory
+    2 | #include <sys/endian.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_3730d.dir/build.make:66: CMakeFiles/cmTC_3730d.dir/BSD.c.o] Error 1
+make[1]: Leaving directory '/home/marks/Documents/Projects/UxPlay/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3730d/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/endian.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/endian.h exist failed with the following output:
+Change Dir: /home/marks/Projects/UxPlay/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_877bf/fast && /usr/bin/make -f CMakeFiles/cmTC_877bf.dir/build.make CMakeFiles/cmTC_877bf.dir/build
+make[1]: Entering directory '/home/marks/Projects/UxPlay/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_877bf.dir/BSD.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_877bf.dir/BSD.c.o   -c /home/marks/Projects/UxPlay/CMakeFiles/CheckIncludeFiles/BSD.c
+/home/marks/Projects/UxPlay/CMakeFiles/CheckIncludeFiles/BSD.c:2:10: fatal error: sys/endian.h: No such file or directory
+    2 | #include <sys/endian.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_877bf.dir/build.make:66: CMakeFiles/cmTC_877bf.dir/BSD.c.o] Error 1
+make[1]: Leaving directory '/home/marks/Projects/UxPlay/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_877bf/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/endian.h>
+
+
+int main(void){return 0;}
+

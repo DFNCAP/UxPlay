@@ -1,2 +1,6 @@
 build/
 .vscode/
+*.h264
+uxplay
+*.aac
+ffmpeg
