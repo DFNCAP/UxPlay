@@ -1,6 +1,9 @@
 build/
 .vscode/
-*.h264
 uxplay
 *.aac
 ffmpeg
+
+# Video Blocks
+*.h264
+*.mp4

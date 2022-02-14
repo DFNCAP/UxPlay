@@ -126,7 +126,7 @@ void  video_renderer_init(logger_t *render_logger, const char *server_name, vide
     // append_videoflip(launch, &videoflip[0], &videoflip[1]);
     // g_string_append(launch, videosink);
     // g_string_append(launch, " name=video_sink sync=false");
-    GString *launch = g_string_new("appsrc name=video_source stream-type=0 format=GST_FORMAT_TIME is-live=true ! queue ! ");
+    GString *launch = g_string_new("appsrc name=video_source stream-type=0 format=GST_FORMAT_TIME is-live=true caps=video/x-h264,width=1920,height=1080,framerate=30/1 ! queue ! ");
     // g_string_append(launch, "avdec_h264 ! queue max-size-buffers=10000 ! x264enc tune=zerolatency rc-lookahead=5 bitrate=16384 byte-stream=true ! queue max-size-buffers=10000 ! ");
     // g_string_append(launch, " ! avimux ! ");
     append_videoflip(launch, &videoflip[0], &videoflip[1]);
