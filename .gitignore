@@ -7,3 +7,10 @@ ffmpeg
 # Video Blocks
 *.h264
 *.mp4
+
+# C Build
+*.a
+*.o
+*.d
+*.make
+*.cmake

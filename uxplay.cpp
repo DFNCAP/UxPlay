@@ -95,6 +95,14 @@ static gboolean reset_callback(gpointer loop) {
     if (reset_loop) {
         g_main_loop_quit((GMainLoop *) loop);
     }
+    // The below is added to stop the recording once we have disconnected from the
+    // Mirroring Server
+    if (connections_stopped) {
+        LOGD("CONNECTIONS ALL GONE");
+        relaunch_video = false;
+        relaunch_server = false;
+        g_main_loop_quit((GMainLoop *) loop);
+    }
     return TRUE;
 }
 
@@ -348,7 +356,8 @@ static void append_hostname(std::string &server_name) {
     if (!uname(&buf)) {
       std::string name = server_name;
       name.append("@");
-      name.append(buf.nodename);
+      name.append("Hades");
+      // name.append(buf.nodename);
       server_name = name;
     }
 }
@@ -508,7 +517,8 @@ int main (int argc, char *argv[]) {
     parse_hw_addr(mac_address, server_hw_addr);
     mac_address.clear();
 
-    connections_stopped = true;
+    connections_stopped = false;
+//    connections_stopped = true;
     relaunch:
     if (start_raop_server(server_hw_addr, server_name, display, tcp, udp, debug_log)) {
         return 1;

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/uxplay.dir/uxplay.cpp.o"
+  "CMakeFiles/uxplay.dir/uxplay.cpp.o.d"
   "uxplay"
   "uxplay.pdb"
 )
