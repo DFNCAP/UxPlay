@@ -1,12 +1,14 @@
 build/
 .vscode/
 uxplay
+uxplay.1
 *.aac
 ffmpeg
 
 # Video Blocks
 *.h264
 *.mp4
+*.mkv
 
 # C Build
 *.a
@@ -14,6 +16,10 @@ ffmpeg
 *.d
 *.make
 *.cmake
+.cmake/
 
 # CMake
 CMakeCache.txt
+CMakeFiles/
+Makefile
+install_manifest.txt
