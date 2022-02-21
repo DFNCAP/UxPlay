@@ -1,7 +1,6 @@
 build/
 .vscode/
 uxplay
-uxplay.1
 *.aac
 ffmpeg
 
